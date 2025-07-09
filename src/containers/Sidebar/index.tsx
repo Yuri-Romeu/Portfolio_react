@@ -1,10 +1,23 @@
+import Avatar from '../../components/Avatar';
+import Paragraph from '../../components/Paragraph';
 import Title from '../../components/Title';
+
+import { Descricao, BotaoTema, SidebarContainer } from './styles';
 
 const Sidebar = () => {
   return (
     <aside>
-      <img src="https://github.com/Yuri-Romeu.png" alt="" />
-      <Title fontSize={20}>Yuri Romeu</Title>
+      <SidebarContainer>
+        <Avatar />
+        <Title fontSize={20}>Yuri Romeu</Title>
+        <Paragraph tipo="secundario" fontSize={16}>
+          Yuri-Romeu
+        </Paragraph>
+        <Descricao tipo="principal" fontSize={12}>
+          Dev Front-end
+        </Descricao>
+        <BotaoTema>Trocar tema</BotaoTema>
+      </SidebarContainer>
     </aside>
   );
 };
